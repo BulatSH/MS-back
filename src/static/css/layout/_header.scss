@@ -1,0 +1,71 @@
+.header {
+    width: 100%;
+    background-color: #284850;
+    height: $header-height;
+    padding-top: 16px;
+    padding-left: $menu-width;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+
+.current-balance {
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    >div:not(:last-of-type) {
+        margin-right: 16px;
+    }
+    &__ruble,
+    &__dollar {
+        display: inline-block;
+        padding-left: 28px;
+        position: relative;
+        font-weight: 600;
+    }
+    &__ico {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.user {
+    &__inner {
+        float: right;
+        >div:not(:last-of-type) {
+            margin-right: 24px;
+        }
+    }
+    &__edit,
+    &__name {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        a {
+            color: inherit;
+        }
+    }
+    &__edit {
+        color: #48C8E7;
+        font-weight: 300;
+    }
+    &__name {
+        color: #D9E5EE;
+        padding-right: 22px;
+        position: relative;
+        font-weight: 500;
+        &__ico {
+            position: absolute;
+            margin: auto;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+}

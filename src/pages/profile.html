@@ -1,0 +1,139 @@
+@@include('./layouts/header.html')
+<div class="container-fluid">
+    <div class="row">
+        <section class="profile-edit col-xs-6">
+            <h2 class="profile-edit__title">
+                Редактирование профиля
+            </h2>
+            <form action="#" method="POST" class="profile-edit-form">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="profile-edit-form__item">
+                            <label for="login" class="profile-edit-form__label">
+                                Логин
+                            </label>
+                            <div class="profile-edit-form__input-wrap">
+                                <div class="profile-edit-form__input-wrap__ico ico-arrow_dropdown"></div>
+                                <input type="text" name="login" id="login" class="profile-edit-form__input">
+                            </div>
+                        </div>
+                        <div class="profile-edit-form__item">
+                            <label for="name" class="profile-edit-form__label">
+                                Имя
+                            </label>
+                            <div class="profile-edit-form__input-wrap">
+                                <div class="profile-edit-form__input-wrap__ico ico-arrow_dropdown"></div>
+                                <input type="text" name="name" id="name" class="profile-edit-form__input">
+                            </div>
+                        </div>
+                        <div class="profile-edit-form__item">
+                            <label for="skype" class="profile-edit-form__label">
+                                Skype
+                            </label>
+                            <div class="profile-edit-form__input-wrap">
+                                <div class="profile-edit-form__input-wrap__ico ico-arrow_dropdown"></div>
+                                <input type="text" name="skype" id="skype" class="profile-edit-form__input">
+                            </div>
+                        </div>
+                        <div class="profile-edit-form__item">
+                            <label for="wm-log-in-agree" class="profile-edit-form__label">
+                                Авторизация через WebMoney при входе
+                            </label>
+                            <div class="profile-edit-form__input-wrap">
+                                <div class="profile-edit-form__input-wrap__ico ico-arrow_dropdown"></div>
+                                <input type="text" name="emwm-log-in-agreeail" id="wm-log-in-agree" class="profile-edit-form__input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="profile-edit-form__item">
+                            <label for="email" class="profile-edit-form__label">
+                                E-mail
+                            </label>
+                            <div class="profile-edit-form__input-wrap">
+                                <div class="profile-edit-form__input-wrap__ico ico-arrow_dropdown"></div>
+                                <input type="text" name="email" id="email" class="profile-edit-form__input">
+                            </div>
+                        </div>
+                        <div class="profile-edit-form__item">
+                            <label for="icq" class="profile-edit-form__label">
+                                ICQ
+                            </label>
+                            <div class="profile-edit-form__input-wrap">
+                                <div class="profile-edit-form__input-wrap__ico ico-arrow_dropdown"></div>
+                                <input type="text" name="icq" id="icq" class="profile-edit-form__input">
+                            </div>
+                        </div>
+                        <div class="profile-edit-form__item">
+                            <label for="webmoney" class="profile-edit-form__label">
+                                WM
+                            </label>
+                            <div class="profile-edit-form__input-wrap">
+                                <div class="profile-edit-form__input-wrap__ico ico-arrow_dropdown"></div>
+                                <input type="text" name="webmoney" id="webmoney" class="profile-edit-form__input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="profile-edit-form__btns-wrap">
+                        <button type="submit" class="profile-edit-form__button button">
+                            Сохранить
+                        </button>
+                        <a href="#" class="profile-edit-form__link">
+                            Отменить последние изменения
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="password-change col-xs-6">
+            <h2 class="password-change__title">
+                Сменить пароль
+            </h2>
+            <form action="#" method="POST" class="password-change-form">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="password-change-form__item">
+                            <label for="old-password" class="password-change-form__label">
+                                Старый пароль
+                            </label>
+                            <div class="password-change-form__input-wrap">
+                                <div class="password-change-form__input-wrap__ico ico-arrow_dropdown"></div>
+                                <input type="text" name="old-password" id="old-password" class="password-change-form__input">
+                            </div>
+                        </div>
+                        <div class="password-change-form__item">
+                            <label for="new-password" class="password-change-form__label">
+                                Новый пароль
+                            </label>
+                            <div class="password-change-form__input-wrap">
+                                <div class="password-change-form__input-wrap__ico ico-arrow_dropdown"></div>
+                                <input type="text" name="new-password" id="new-password" class="password-change-form__input">
+                            </div>
+                        </div>
+                        <div class="password-change-form__item">
+                            <label for="new-password-repeat" class="password-change-form__label">
+                                Повторите новый пароль
+                            </label>
+                            <div class="password-change-form__input-wrap">
+                                <div class="password-change-form__input-wrap__ico ico-arrow_dropdown"></div>
+                                <input type="text" name="new-password-repeat" id="new-password-repeat" class="password-change-form__input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="password-change-form__btns-wrap">
+                            <button type="submit" class="password-change-form__button button">
+                            Сохранить
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+@@include('./layouts/footer.html')

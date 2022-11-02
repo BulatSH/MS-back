@@ -1,0 +1,128 @@
+.menu-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-family: 'SF Compact Display', sans-serif;
+    font-weight: 600;
+    width: 112px;
+    height: 100%;
+    background-color: #000;
+    color: #A2BDD2;
+    display: table;
+    .menu__wrap {
+        display: table-cell;
+    }
+}
+
+.logo {
+    margin-top: 38px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+    &__image {
+        width: 100%;
+        max-width: 80px;
+    }
+}
+
+.menu {
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    &__link {
+        display: block;
+        padding-top: 38px;
+        padding-bottom: 14px;
+        position: relative;
+        color: inherit;
+        cursor: pointer;
+        color: #A2BDD2;
+        transition: 0.1s linear;
+        &:hover {
+            color: $color-white;
+            background-color: #10252B;
+            text-decoration: none;
+        }
+        &__ico {
+            position: absolute;
+            top: 8px;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+        &.disable {
+            pointer-events: none;
+            cursor: default;
+            background-color: #10252B;
+            color: $color-white;
+        }
+    }
+    &__link-count {
+        font-family: 'Futura New', sans-serif !important;
+        font-weight: 600;
+        color: $color-white;
+        position: absolute;
+        margin: auto;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        transform: translate(12px, -6px);
+        background-color: #FF0000;
+        text-align: center;
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        font-size: 10px;
+        line-height: 18px;
+    }
+}
+
+.contacts {
+    display: table-row;
+    height: 1px;
+    text-align: center;
+    font-size: 0;
+    font-weight: 400;
+    &__list {
+        margin-bottom: 32px;
+    }
+    &__title {
+        color: #A2BDD2;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+    }
+    &__item {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        &:not(:last-of-type) {
+            margin-right: 8px;
+        }
+    }
+    &__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: 0.1s opacity linear;
+        &__ico {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

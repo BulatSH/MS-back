@@ -1,0 +1,36 @@
+label {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+}
+
+input {
+    background: transparent;
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 22px;
+    padding: 8px 10px;
+    width: 100%;
+    font-weight: 300;
+}
+
+::-webkit-input-placeholder {
+    color: #6F8A9D;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #6F8A9D;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: #6F8A9D;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #6F8A9D;
+    opacity: 1;
+}

@@ -1,0 +1,68 @@
+.site_theme-dark {
+    background-image: url(../img/site-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h2 {
+        color: $color-light-blue;
+    }
+    h3 {
+        color: $color-white;
+    }
+    .offers__additional-information,
+    .news__additional-information,
+    .special-offers__additional-information,
+    .discounts__additional-information {
+        color: $color-white;
+    }
+    .offers-table {
+        color: $color-white;
+        &__title {
+            color: #333;
+        }
+        &__name {
+            color: $color-light-blue;
+        }
+    }
+    .news-block {
+        &__item {
+            background-color: #274850;
+        }
+        &__title,
+        &__publication-date,
+        &__description {
+            color: $color-white;
+        }
+    }
+    label {
+        color: #CADBE8;
+    }
+    input {
+        border: 1px solid #457E8C;
+        color: $color-white;
+    }
+    .flows-filter {
+        input {
+            color: #6F8A9D;
+        }
+    }
+    .flows-table {
+        color: #89B2C9;
+        a {
+            color: inherit;
+        }
+        &__item {
+            &:first-of-type {
+                border-top: 1px solid #274850;
+            }
+            &:not(:first-of-type) {
+                border-bottom: 1px solid #274850;
+            }
+        }
+        &__name,
+        &__subjects,
+        &__country {
+            color: $color-white;
+        }
+    }
+}

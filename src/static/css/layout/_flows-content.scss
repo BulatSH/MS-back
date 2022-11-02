@@ -1,0 +1,125 @@
+.flows {
+    margin-bottom: 16px;
+}
+
+.flows__header {
+    margin-top: 50px;
+    margin-bottom: 26px;
+    position: relative;
+    .flows__button-wrap {
+        text-align: right;
+    }
+    .flows__button {
+        &__inner {
+            padding-left: 26px;
+            position: relative;
+            &__ico {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.flows-table {
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    color: #89B2C9;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: left;
+    letter-spacing: -0.02em;
+    line-height: 18px;
+    &__col1,
+    &__col2,
+    &__col3,
+    &__col4,
+    &__col5,
+    &__col6,
+    &__col7 {
+        display: table-column;
+    }
+    &__col1 {
+        width: 22%;
+    }
+    &__col2,
+    &__col3 {
+        width: 8%;
+    }
+    &__col4 {
+        width: 10%;
+    }
+    &__col5 {
+        width: 9%;
+    }
+    &__col6,
+    &__col7 {
+        width: 22%;
+    }
+    &__item {
+        display: table-row;
+        &:not(:first-of-type) {
+            height: 78px;
+        }
+        >div {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        line-height: 18px;
+    }
+    &__name {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        letter-spacing: initial;
+    }
+    &__id {
+        padding-left: 24px;
+        position: relative;
+        &__ico {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__operator {
+        position: relative;
+        &__ico:not(:last-of-type) {
+            margin-right: 8px;
+        }
+    }
+    &__link {
+        text-decoration: underline dotted;
+        position: relative;
+        padding-right: 22px;
+        font-weight: 600;
+        &__ico {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+    }
+    &__actions {
+        text-align: right;
+        &-link {
+            position: relative;
+            display: inline-block;
+            &:not(:last-of-type) {
+                margin-right: 16px;
+            }
+        }
+    }
+}

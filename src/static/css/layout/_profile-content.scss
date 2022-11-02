@@ -1,0 +1,56 @@
+.profile-edit,
+.password-change {
+    margin-top: 48px;
+    margin-bottom: 16px;
+    &__title {
+        padding-bottom: 26px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-bottom: 1px solid #3d4e54;
+    }
+}
+
+.profile-edit-form,
+.password-change-form {
+    margin-top: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    label {
+        display: block;
+        padding-bottom: 6px;
+    }
+    &__item {
+        &:not(:last-of-type) {
+            margin-bottom: 18px;
+        }
+    }
+    &__input {
+        padding-right: 28px;
+    }
+    &__input-wrap {
+        position: relative;
+        &__ico {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 8px;
+        }
+    }
+    &__btns-wrap {
+        margin-top: 36px;
+    }
+}
+
+.profile-edit-form {
+    &__button {
+        margin-right: 30px;
+    }
+    &__link {
+        display: inline-block;
+        color: $color-light-blue;
+        font-size: 15px;
+        line-height: 18px;
+        text-decoration: underline;
+    }
+}

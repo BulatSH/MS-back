@@ -1,0 +1,14 @@
+node_modules
+build
+bower_components
+package-lock.json
+example
+
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+# Sprites
+src/static/img/sprite.png
+src/static/css/plugins/sprite/_sprites.scss

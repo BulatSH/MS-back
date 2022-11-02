@@ -1,0 +1,10 @@
+@import './../plugins/sprite/_sprites';
+
+.ico {
+  @each $name, $params in $sprites {
+    &-#{$name} {
+      display: inline-block;
+      @include sprite($params);
+    }
+  }
+}

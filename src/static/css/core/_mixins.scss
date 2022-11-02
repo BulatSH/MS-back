@@ -1,0 +1,34 @@
+@mixin breakpoint($size) {
+    @media only screen and (max-width : $size + px) { @content; }
+}
+
+@mixin spriteWidth($sprite) {
+  width: nth($sprite, 6);
+}
+
+@mixin spriteHeight($sprite) {
+  height: nth($sprite, 7);
+}
+
+@mixin spritePosition($sprite) {
+  $pos-x: strip-unit(nth($sprite, 2)) / (strip-unit(nth($sprite, 8)) - strip-unit(nth($sprite, 6)));
+  $pos-y: strip-unit(nth($sprite, 3)) / (strip-unit(nth($sprite, 9)) - strip-unit(nth($sprite, 7)));
+  @if $pos-x == NaN {$pos-x: 0;}
+  @if $pos-y == NaN {$pos-y: 0;}
+  background-position-x: $pos-x * 100%;
+  background-position-y: $pos-y * 100%;
+
+}
+
+@mixin spriteImage($sprite) {
+  background-image: url("../img/#{nth($sprite, 10)}");
+}
+
+@mixin sprite($sprite) {
+  background-size: (nth($sprite, 8) / nth($sprite, 6) * 100%)  (nth($sprite, 9) / nth($sprite, 7) * 100%);
+	background-repeat: no-repeat;
+  @include spriteImage($sprite);
+  @include spritePosition($sprite);
+  @include spriteWidth($sprite);
+  @include spriteHeight($sprite);
+}

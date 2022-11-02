@@ -1,0 +1,25 @@
+{
+  "name": "ms-pro-back-office",
+  "authors": [
+    "Denis Miloslavskii <denmilos@ltg.group>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "select2": "^4.0.13",
+    "datetimepicker": "^2.5.20",
+    "datatables": "^1.10.20",
+    "bootstrap-sass": "^3.4.1",
+    "smooth-scrollbar": "^8.5.2"
+  }
+}
